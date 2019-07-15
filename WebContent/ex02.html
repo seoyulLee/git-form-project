@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>	
+	<div class="container">
+		<div class="row"> <!-- grid div -->
+			<div class="col-sm-8"> 탭 <br>
+			<!-- Nav tabs -->
+				<ul class="nav nav-tabs">
+				    <li class="nav-item">
+				    <a class="nav-link" data-toggle="tab" href="#menu1">Menu 1</a>
+				    </li>
+				    <li class="nav-item">
+				    <a class="nav-link" data-toggle="tab" href="#menu2">Menu 2</a>
+				    </li>
+				</ul>
+				
+				<!-- Tab panes -->
+				<div class="tab-content">
+				    <div class="tab-pane container" id="menu1">...</div>
+				    <div class="tab-pane container" id="menu2">
+				    	<div> <!-- 시(도) 선택버턴 -->
+				    		<button id="btnSeoul" class="btn btn-outline-info">서울</button>
+				    		<button id="btnInchon" class="btn btn-outline-info">인천</button>
+				    	</div>
+				    	<div>
+				    		<div>
+				    			<div class="form-group">
+				    			<!-- 선택시(도) -->
+									<label id="targetLabel" for="comment"></label>
+								<!-- 선택시(도) 항목 -->
+									<textarea id="targetTextarea" class="form-control" rows="5"></textarea>
+								</div>
+				    		</div>
+				    	</div>
+				    </div>
+				</div>
+			</div>
+			<div class="col-sm-4">배너</div>	
+		</div> <!-- grid /div -->
+	</div> <!-- container /div -->  
+</body>
+
+<script>
+	$('#btnSeoul').click(function(){
+		console.log('#btnSeoul click');
+		$('#targetLabel').text('서울');
+		let str = '';
+		str += '강남구';
+		str += '\t강동구';
+		str += '\n강북구';
+		str += '\t강서구';
+		str += '\n관악구';
+		str += '\t광진구';
+		str += '\n구로구';
+		str += '\t금천구';
+		str += '\n노원구';
+		str += '\t도봉구';
+		str += '\n동대문구';
+		str += '\t동작구';
+	$('#targetTextarea').val(str);
+	});
+</script>
+</html>
