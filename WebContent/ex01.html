@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
@@ -12,6 +13,15 @@
 
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<!-- 글씨체 -->
+<link href="https://fonts.googleapis.com/css?family=Noto+Serif+KR&display=swap" rel="stylesheet">
+
+<style>
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif+KR&display=swap');
+gs.{font-family: 'Noto Serif KR', serif;}
+</style>
+
 <meta charset="EUC-KR">
 <title>Insert title here</title>
 </head>
@@ -32,56 +42,69 @@
 		    <div class="modal-content">
 		
 		      <!-- Modal Header -->
-		      <div class="modal-header">
-		      	로그인
+		      <h3 class="gs"><div class="modal-header gs">
+		      	 로그인 
 		        <button type="button" class="close" data-dismiss="modal">&times;</button>
-		      </div>
+		      </div></h3>
 		
 		      <!-- Modal body -->
 		      <div class="modal-body">
-		        Modal body..
-		        <div>
-		        	<button type="button" class="btn btn-outline-secondary">페이스북 아이디로 로그인</button>
+		        <div class = text-center>
+		        	<button type="button" class="btn btn-outline-secondary btn-block">
+		        		<img src=images/fb.PNG>
+		        		 아이디로 로그인
+		        	</button>
 		        </div> 
-		        <div>
-		        	<button type="button" class="btn btn-outline-secondary">네이버 아이디로 로그인</button>
+		        <br>
+		        <div class = text-center>
+		        	<button type="button" class="btn btn-outline-secondary btn-block">
+		        	 	<img src=images/na.PNG>
+		        		아이디로 로그인
+		        	</button>
 		        </div> 
-		        <div>
-		        	<button type="button" class="btn btn-outline-secondary">카카오 아이디로 로그인</button>
+		        <br>
+		        <div class = text-center>
+		        	<button type="button" class="btn btn-outline-secondary btn-block">
+		        		<img src="images/ka.PNG">
+		        		아이디로 로그인
+		        	</button>
 		        </div> 
 		         <br>
 		         <br>
-		        <div>
-			      	 아이디로그인
-		        </div>
-			    <div class= text-center>
-			   	 	아이디<input type="text">
+		        
+		        <h5> 아이디 로그인  </h5> 
+		        <br>
+			    <div>
+			   	 	<input type="text" size=62.5% placeholder="아이디를 입력해주세요.">
 			    </div> 	
+			    <br>
 			    <div>
-					패스워드<input type="password">
+					<input type="password" size=62.5% placeholder="비밀번호를 입력해주세요.">
 			    </div> 	  
-
-			    <div>
-			    <button type="button" class="btn btn-dark">로그인</button>     
+				<br>
+			    <div class="text-center">
+			    <button type="button" class="btn btn-dark btn-block">로그인</button>     
 			    </div>     
-			    <div>
-			    <button type="button" class="btn btn-outline-light text-dark"> 아이디/비밀번호 찾기</button>
+			    <div class = text-center>
+			    <button type="button" class="btn btn-outline-light text-dark btn-block"> 아이디/비밀번호 찾기</button>
 			    </div>
-			    <div>
-			    <button type="button" class="btn btn-outline-light text-dark"> 비회원 주문조회 </button>
+			    <div class = text-center>
+			    <button type="button" class="btn btn-outline-light text-dark btn-block"> 비회원 주문조회 </button>
 			    </div>
-			    <br>
-			    <br>
-			    <div>
+			    <hr>
+			    <div class="text-center">
 			         마리몬드의 회원이 되시면 적립금 3,000원과<br>
 				첫 구매 10% 할인 쿠폰을 드립니다.
 			    </div>    
 			    <br>  
-			    <div>
-			    <button type="button" class="btn btn-outline-danger">마리몬드 회원가입</button>
+			    <div class = text-center>
+				    <button type="button" class="btn btn-outline-danger">
+				    	<img src="images/mr.PNG">
+				    	<label class="text-body"> 회원가입 </label>
+				    </button>
 			    </div>    
 				
-				<div>
+				<div class = text-center>
 			    <button type="button" class="btn btn-outline-light text-dark"> 고객센터 </button>
 			    </div>
 			
@@ -92,4 +115,7 @@
 		</div>
 		<!-- end modal -->
 </body>
+<script>
+	/* $('#id').val('아이디를 입력해주세요.'); */
+</script>
 </html>
